@@ -10,26 +10,26 @@
   </head>
   <body>
     <div id="calculator">
-      <input id="screen"></input>
+      <input id="screen" onblur="this.focus()" autofocus></input>
       <div id="operators">
-        <button id="clear" onclick="clear()">AC</button>
-        <button id="pm">+/-</button>
-        <button id="power">^</button>
-        <button id="divide">/</button>
-        <button id="seven">7</button>
-        <button id="eight">8</button>
-        <button id="nine">9</button>
-        <button id="multiply">x</button>
-        <button id="four">4</button>
-        <button id="five">5</button>
-        <button id="six">6</button>
-        <button id="minus">-</button>
-        <button id="one">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        <button id="plus">+</button>
-        <button id="zero">0</button>
-        <button id="period">.</button>
+        <button id="clear" onclick="screen.value += '';">AC</button>
+        <button id="pm" onclick="screen.value += '-';">+/-</button>
+        <button id="power" onclick="screen.value += this.innerHTML;">^</button>
+        <button id="divide" onclick="screen.value += this.innerHTML;">/</button>
+        <button id="seven" onclick="screen.value += this.innerHTML;">7</button>
+        <button id="eight" onclick="screen.value += this.innerHTML;">8</button>
+        <button id="nine" onclick="screen.value += this.innerHTML;">9</button>
+        <button id="multiply" onclick="screen.value += '*';">x</button>
+        <button id="four" onclick="screen.value += this.innerHTML;">4</button>
+        <button id="five" onclick="screen.value += this.innerHTML;">5</button>
+        <button id="six" onclick="screen.value += this.innerHTML;">6</button>
+        <button id="minus" onclick="screen.value += this.innerHTML;">-</button>
+        <button id="one" onclick="screen.value += this.innerHTML;">1</button>
+        <button id="two" onclick="screen.value += this.innerHTML;">2</button>
+        <button id="three" onclick="screen.value += this.innerHTML;">3</button>
+        <button id="plus" onclick="screen.value += this.innerHTML;">+</button>
+        <button id="zero" onclick="screen.value += this.innerHTML;">0</button>
+        <button id="period" onclick="screen.value += this.innerHTML;">.</button>
         <button id="equals">=</button>
       </div>
     </div>
